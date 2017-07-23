@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Remote Control</title>
+</head>
+<body>
+    <h1 th:text="'Robot truck control panel'" />
+    <form action="#" th:action="@{/control}" method="POST">
+        <input type="submit" name="forward" value="forward">
+        <input type="submit" name="backward" value="backward">
+        <input type="submit" name="turn left" value="turn left">
+        <input type="submit" name="turn right" value="turn right">
+    </form>
+</body>
+</html>
